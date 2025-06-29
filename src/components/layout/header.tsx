@@ -4,13 +4,6 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
 
 export function Header() {
   const { scrollYProgress } = useScroll();
@@ -49,29 +42,14 @@ export function Header() {
         <div className="flex items-center gap-4">
           <ThemeToggle />
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                size="sm"
-                className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Resume <ChevronDown className="ml-1 h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem
-                onClick={() => window.open("/resume-en.pdf", "_blank")}
-              >
-                English Resume
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => window.open("/resume-es.pdf", "_blank")}
-              >
-                Español Resume
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Button
+            variant="outline"
+            size="sm"
+            className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            onClick={() => window.open("/Juan-Segundo-Martinez.pdf", "_blank")}
+          >
+            Resume
+          </Button>
         </div>
       </div>
     </motion.header>
