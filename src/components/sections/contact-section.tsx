@@ -53,12 +53,7 @@ export function ContactSection() {
               </div>
             </div>
           </motion.div>
-          {/* <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          > */}
+
           <Card>
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
@@ -127,7 +122,6 @@ export function ContactSection() {
               </form>
             </CardContent>
           </Card>
-          {/* </motion.div> */}
         </div>
       </div>
     </section>

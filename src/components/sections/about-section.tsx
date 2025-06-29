@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function AboutSection() {
   return (
@@ -41,18 +42,24 @@ export function AboutSection() {
             </p>
             <p className="text-muted-foreground mb-8">
               When I{"'"}m not coding, you can find me exploring new design
-              trends, experimenting with creative technologies, or hiking in the
-              mountains.
+              trends, experimenting with creative technologies or in the gym.
             </p>
             <div className="flex gap-4">
-              <Button className="rounded-full gap-2">
-                <User size={16} />
-                More About Me
-              </Button>
-              <Button variant="outline" className="rounded-full gap-2">
-                <Mail size={16} />
-                Get in Touch
-              </Button>
+              <Link
+                href={`https://www.linkedin.com/in/juansegundomartinez/`}
+                target="_blank"
+              >
+                <Button className="rounded-full gap-2">
+                  <User size={16} />
+                  More About Me
+                </Button>
+              </Link>
+              <Link href={`#contact`}>
+                <Button variant="outline" className="rounded-full gap-2">
+                  <Mail size={16} />
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
