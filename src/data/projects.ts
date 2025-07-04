@@ -2,6 +2,29 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    title: "Tomy Medina",
+    category: "Web Development",
+    description:
+      "Tomy Medina is a personal training web page focused in sell training programs for fitness and bodybuilding.",
+    slug: "tomy-medina",
+    image: "/tomymedina-preview.webp",
+    longDescription:
+      "Tomy Medina is a personal training web page focused in sell training programs for fitness and bodybuilding. The application allows users to browse and purchase training programs through mercadopago. Once done the information is sent to the email of the user.",
+
+    technologies: [
+      { name: "Next.js", category: "frontend" },
+      { name: "Tailwind CSS", category: "frontend" },
+      { name: "TypeScript", category: "frontend" },
+    ],
+    demoUrl: "https://www.tomymedina.com",
+    features: [
+      "Training programs sale",
+      "Mercadopago integration",
+      "Responsive layout",
+      "Email confirmation",
+    ],
+  },
+  {
     title: "Free Games",
     category: "Web Development",
     description:
