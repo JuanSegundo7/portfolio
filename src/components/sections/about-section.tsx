@@ -42,7 +42,8 @@ export function AboutSection() {
             </p>
             <p className="text-muted-foreground mb-8">
               When I{"'"}m not coding, you can find me exploring new design
-              trends, experimenting with creative technologies or in the gym.
+              trends, experimenting with creative technologies or in the gym
+              working my muscles!
             </p>
             <div className="flex gap-4">
               <Link

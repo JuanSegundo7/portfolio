@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WavyBackground } from "@/components/ui/wavy-background";
+import Link from "next/link";
 
 export function HeroSection() {
   const ref = useRef(null);
@@ -42,12 +43,16 @@ export function HeroSection() {
             Full Stack Developer | Web Designer
           </p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" className="rounded-full">
-              View Work
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full">
-              Contact Me
-            </Button>
+            <Link href={`#work`}>
+              <Button size="lg" className="rounded-full">
+                View Work
+              </Button>
+            </Link>
+            <Link href={`#contact`}>
+              <Button variant="outline" size="lg" className="rounded-full">
+                Contact Me
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>
